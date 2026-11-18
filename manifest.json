@@ -1,0 +1,8 @@
+{
+  "name": "RK INTERACTIVE OFFICIAL",
+  "short_name": "RK INTERACTIVE",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#090909",
+  "theme_color": "#090909"
+}
