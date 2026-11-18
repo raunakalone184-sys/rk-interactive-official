@@ -1,74 +1,300 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#090909">
-<meta name="description" content="RK INTERACTIVE — We Create. You Explore.">
-<link rel="manifest" href="manifest.json">
-<title>RK INTERACTIVE OFFICIAL</title>
-<style>
-:root{--bg:#090909;--panel:#151515;--red:#e32636;--text:#f5f5f5;--muted:#aaa}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
-header{padding:18px 18px 12px;background:#101010;border-bottom:1px solid #292929;position:sticky;top:0;z-index:5}
-.brand{display:flex;align-items:center;gap:11px}.mark{width:43px;height:43px;border-radius:12px;background:linear-gradient(145deg,#e32636,#7c0712);display:grid;place-items:center;font-weight:900;font-size:19px;box-shadow:0 0 18px #e3263633}
-.brand strong{letter-spacing:1.4px;font-size:16px}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:2px;margin-top:4px}
-main{max-width:760px;margin:auto;padding:18px 16px 92px}.hero{border:1px solid #3a2023;border-radius:20px;padding:25px 20px;background:radial-gradient(circle at 90% 5%,#5b111b 0,#211014 38%,#121212 78%);min-height:210px;display:flex;flex-direction:column;justify-content:center}
-.eyebrow{color:#ff6b76;font-size:11px;letter-spacing:2.5px;font-weight:bold}.hero h1{font-size:clamp(29px,7vw,45px);line-height:1.04;margin:12px 0}.hero p{color:#d0c5c5;line-height:1.5;margin:0 0 17px}.btn{border:0;border-radius:10px;background:var(--red);color:white;font-weight:bold;padding:12px 16px;cursor:pointer;min-height:44px}.btn.secondary{background:#252525;border:1px solid #444}.section{margin-top:25px}.section h2{font-size:19px;margin:0 0 12px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:var(--panel);border:1px solid #2b2b2b;border-radius:15px;padding:16px;min-width:0}.card .icon{font-size:24px}.card h3{margin:10px 0 6px;font-size:15px}.card p{margin:0;color:var(--muted);font-size:13px;line-height:1.45}.feature{background:linear-gradient(120deg,#241013,#171717);border-color:#57232a}.tag{display:inline-block;color:#ff9aa2;border:1px solid #74303a;border-radius:20px;padding:5px 9px;font-size:10px;letter-spacing:1px;margin-bottom:8px}
-nav{position:fixed;bottom:0;left:0;right:0;background:#101010;border-top:1px solid #303030;display:flex;justify-content:space-around;padding:8px 4px calc(8px + env(safe-area-inset-bottom));z-index:6}
-nav button{background:none;border:0;color:#aaa;font-size:11px;padding:7px 4px;min-width:54px;cursor:pointer}nav button.active{color:#ff626e}nav span{display:block;font-size:18px;margin-bottom:3px}
-.page{display:none}.page.active{display:block}.list{display:grid;gap:10px}.row{display:flex;gap:12px;align-items:center}.row .icon{width:42px;height:42px;border-radius:12px;background:#262626;display:grid;place-items:center;flex-shrink:0}.muted{color:var(--muted);font-size:13px;line-height:1.5}.notice{border-left:3px solid var(--red);padding:11px 13px;background:#191313;border-radius:0 10px 10px 0;color:#d8caca;font-size:12px;line-height:1.5;margin-top:14px}
-footer{text-align:center;color:#777;font-size:11px;padding:25px 0 5px}
-@media(max-width:390px){.grid{grid-template-columns:1fr}.hero{padding:21px 17px}}
-</style>
-</head>
-<body>
-<header><div class="brand"><div class="mark">RK</div><div><strong>RK INTERACTIVE</strong><small>WE CREATE. YOU EXPLORE.</small></div></div></header>
-<main>
-<section id="home" class="page active">
- <div class="hero"><div class="eyebrow">WELCOME TO OUR WORLD</div><h1>PLAY BEYOND<br>LIMITS.</h1><p>Games, creativity and new digital experiences — all under one roof.</p><div><button class="btn" data-go="games">Explore Games</button></div></div>
- <div class="section"><h2>Our Divisions</h2><div class="grid">
-  <article class="card"><div class="icon">🎮</div><h3>RK GAMES</h3><p>Original game concepts and interactive worlds.</p></article>
-  <article class="card"><div class="icon">☁️</div><h3>RK CLOUD</h3><p>A future concept for cloud-based gaming.</p></article>
-  <article class="card"><div class="icon">🎬</div><h3>RK STUDIOS</h3><p>Creative ideas, design and digital storytelling.</p></article>
-  <article class="card"><div class="icon">⚡</div><h3>RK LABS</h3><p>Experimenting with fresh technology ideas.</p></article>
- </div></div>
- <div class="section"><article class="card feature"><span class="tag">FIRST GAME PROJECT</span><h2>RAUNAK: THE LAST KING</h2><p>An open-world action-adventure concept currently in development planning.</p><p style="margin-top:13px"><button class="btn secondary" data-go="games">View project</button></p></article></div>
-</section>
-<section id="games" class="page">
- <div class="eyebrow">RK GAMES</div><h1>Our Games</h1>
- <article class="card feature"><span class="tag">IN DEVELOPMENT CONCEPT</span><h2>RAUNAK: THE LAST KING</h2><p>Explore a fictional city, discover its stories and shape your own adventure. Project details and release information will be added here as development progresses.</p><p class="muted" style="margin-top:12px">Status: Concept / early planning</p></article>
- <div class="notice">This is a project showcase. No game download or playable cloud service is available in this demo yet.</div>
-</section>
-<section id="cloud" class="page">
- <div class="eyebrow">PLAY YOUR WAY</div><h1>RK CLOUD</h1>
- <article class="card"><div class="icon">☁️</div><h2>Gaming, reimagined.</h2><p class="muted">RK CLOUD is our planned cloud-gaming concept. The goal is to explore ways to play games across supported devices without needing a high-end gaming computer.</p></article>
- <div class="notice">Coming later: service details, supported devices and availability. No streaming service is active yet.</div>
-</section>
-<section id="news" class="page">
- <div class="eyebrow">WHAT'S NEW</div><h1>News & Updates</h1>
- <div class="list"><article class="card"><span class="tag">PROJECT UPDATE</span><h3>RK INTERACTIVE official app demo</h3><p class="muted">The first mobile app concept is ready. More features will be added as the project grows.</p></article><article class="card"><span class="tag">GAME PROJECT</span><h3>RAUNAK: THE LAST KING</h3><p class="muted">The game remains in concept and planning stage.</p></article></div>
-</section>
-<section id="about" class="page">
- <div class="eyebrow">WHO WE ARE</div><h1>About RK</h1>
- <article class="card"><h2>RK INTERACTIVE</h2><p class="muted">An independent gaming and creative studio concept built around imagination, interactive entertainment and technology.</p><p style="font-weight:bold;margin-top:18px">WE CREATE. YOU EXPLORE.</p></article>
- <div class="section"><h2>Our Vision</h2><article class="card"><p class="muted">To develop original games and digital experiences, one step at a time.</p></article></div>
- <div class="notice">RK INTERACTIVE is a personal project/brand concept in development, not a claim of a registered company.</div>
-</section>
-<footer>© 2026 RK INTERACTIVE · Demo App</footer>
-</main>
-<nav aria-label="Main navigation">
-<button class="active" data-page="home"><span>⌂</span>Home</button>
-<button data-page="games"><span>🎮</span>Games</button>
-<button data-page="cloud"><span>☁</span>Cloud</button>
-<button data-page="news"><span>▤</span>News</button>
-<button data-page="about"><span>ⓘ</span>About</button>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080816">
+<meta name="description" content="RK INTERACTIVE - Explore games, AI tools and digital entertainment.">
+<meta name="robots" content="index, follow">
+<title>RK INTERACTIVE | Official Website</title><style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080816;
+    color: white;
+}
+
+header {
+    width: 100%;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #101020;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #25254b;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #00d9ff;
+}
+
+.logo span {
+    color: #a855f7;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #00d9ff;
+}
+
+.hero {
+    min-height: 540px;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:
+    radial-gradient(circle at top, #25205d, transparent 60%),
+    #080816;
+}
+
+.hero h1 {
+    font-size: clamp(35px, 7vw, 65px);
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #00d9ff;
+}
+
+.hero p {
+    color: #c4c4d8;
+    font-size: 17px;
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+.btn {
+    display: inline-block;
+    margin: 25px 8px;
+    padding: 14px 28px;
+    background: linear-gradient(90deg,#007bff,#9b36ff);
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+section {
+    padding: 70px 7%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #aaaac4;
+    margin-bottom: 35px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #15152b;
+    border: 1px solid #303052;
+    padding: 30px 20px;
+    border-radius: 18px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #00d9ff;
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 18px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: #00d9ff;
+}
+
+.card p {
+    color: #b6b6cc;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.search-box {
+    width: 100%;
+    max-width: 450px;
+    padding: 14px;
+    border: 1px solid #44446b;
+    border-radius: 30px;
+    background: #15152b;
+    color: white;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+.about {
+    background: #101020;
+}
+
+footer {
+    background: #05050d;
+    text-align: center;
+    padding: 30px 15px;
+    color: #aaaac4;
+    line-height: 2;
+}
+
+footer strong {
+    color: #00d9ff;
+}
+
+@media(max-width:650px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    section {
+        padding: 55px 5%;
+    }
+}
+</style></head><body><header>
+    <div class="logo">RK <span>INTERACTIVE</span></div><nav>
+    <a href="#home">Home</a>
+    <a href="#games">Games</a>
+    <a href="#ai">AI Tools</a>
+    <a href="#cloud">Cloud Gaming</a>
+    <a href="#about">About</a>
 </nav>
-<script>
-const pages=[...document.querySelectorAll('.page')], nav=[...document.querySelectorAll('nav button')];
-function showPage(id){pages.forEach(p=>p.classList.toggle('active',p.id===id));nav.forEach(b=>b.classList.toggle('active',b.dataset.page===id));window.scrollTo({top:0,behavior:'smooth'});}
-nav.forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.page)));
-document.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>showPage(b.dataset.go)));
-if('serviceWorker' in navigator && location.protocol.startsWith('http')){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}
-</script>
-</body></html>
+
+</header><main><section class="hero" id="home">
+    <h1>WELCOME TO <span>RK INTERACTIVE</span></h1><p>
+    Discover a new world of gaming, technology
+    and digital entertainment.
+    Your World. Your Entertainment.
+</p>
+
+<a href="#games" class="btn">EXPLORE GAMES</a>
+<a href="#ai" class="btn">EXPLORE AI TOOLS</a>
+
+</section><section id="games">
+    <h2 class="section-title">🎮 GAMING ZONE</h2>
+    <p class="subtitle">Discover our gaming world.</p><div class="cards">
+
+    <div class="card">
+        <div class="icon">🏙️</div>
+        <h3>Open World Games</h3>
+        <p>Explore exciting open-world gaming projects.</p>
+        <a href="#cloud" class="btn">Explore</a>
+    </div>
+
+    <div class="card">
+        <div class="icon">🏎️</div>
+        <h3>Racing Games</h3>
+        <p>Experience the excitement of racing games.</p>
+        <a href="#cloud" class="btn">Explore</a>
+    </div>
+
+    <div class="card">
+        <div class="icon">⚔️</div>
+        <h3>Adventure Games</h3>
+        <p>Discover new adventures and challenges.</p>
+        <a href="#cloud" class="btn">Explore</a>
+    </div>
+
+</div>
+
+</section><section id="ai">
+    <h2 class="section-title">🤖 AI TOOLS</h2>
+    <p class="subtitle">Our upcoming AI technology section.</p><div class="cards">
+
+    <div class="card">
+        <div class="icon">💬</div>
+        <h3>AI Assistant</h3>
+        <p>An AI assistant experience is coming soon.</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">🖼️</div>
+        <h3>AI Image Studio</h3>
+        <p>Explore our upcoming creative AI tools.</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">🔍</div>
+        <h3>AI Search</h3>
+        <p>Discover our upcoming smart search platform.</p>
+    </div>
+
+</div>
+
+</section><section id="cloud">
+    <h2 class="section-title">☁️ CLOUD GAMING</h2>
+    <p class="subtitle">A new gaming experience is on the way.</p><div class="card">
+    <div class="icon">🚀</div>
+    <h3>COMING SOON</h3>
+    <p>RK INTERACTIVE Cloud Gaming is under development.</p>
+</div>
+
+</section><section class="about" id="about">
+    <h2 class="section-title">ABOUT RK INTERACTIVE</h2><p class="subtitle">
+    RK INTERACTIVE is an independent digital
+    entertainment and technology brand.
+
+    Our vision is to create exciting gaming
+    experiences and innovative digital products.
+</p>
+
+<h3 style="color:#00d9ff;">YOUR WORLD. YOUR ENTERTAINMENT.</h3>
+
+</section></main><footer>
+    <strong>RK INTERACTIVE</strong>
+    <p>Innovation | Gaming | Technology</p>
+    <p>© 2026 RK INTERACTIVE. All Rights Reserved.</p>
+</footer></body>
+</html>
